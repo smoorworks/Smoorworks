@@ -1,0 +1,192 @@
+/* =========================
+   ALGEMEEN / BODY
+========================= */
+
+body{
+    margin: 0;
+    background-color: #444444;
+    color: rgb(197, 197, 197);
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    scrollbar-width: thin;
+
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/* algemene link reset */
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+/* =========================
+   HEADER / MENUBAR
+========================= */
+
+#Menubar{
+    background-color: rgb(37, 37, 37);
+    padding: 1px;
+
+    display: flex;
+    align-items: center;
+
+    margin: 10px;
+    border-radius: 8px;
+}
+
+/* LOGO */
+#Logo{
+    width: 70px;
+    margin: 5px 0 0 10px;
+}
+
+/* TITEL */
+#title{
+    margin-left: 10px;
+    color: rgb(250, 100, 0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =========================
+   NAVIGATIE
+========================= */
+
+#Navigation{
+    margin-left: auto;
+    margin-right: 30px;
+
+    display: flex;
+    gap: 10px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+
+    scrollbar-width: none;
+}
+
+/* knop styling */
+.NavButton{
+    flex-shrink: 0;
+
+    background-color: transparent;
+    color: rgb(250, 100, 0);
+
+    border: none;
+
+    padding: 10px;
+    font-size: 20px;
+
+    cursor: pointer;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+/* hover effect */
+.NavButton:hover{
+    color: rgb(128, 62, 0);
+    transition: 0.2s;
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+main{
+    flex: 1;
+
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* artikel layout */
+article{
+    max-width: 800px;
+    margin-left: 30px;
+}
+
+.h1 {
+    color: rgb(250, 100, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer{
+    background-color: rgb(20, 20, 20);
+    color: white;
+
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* container */
+.footer-container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* rij layout */
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+/* kolommen */
+.footer-col{
+    flex: 1;
+    min-width: 200px;
+}
+
+/* logo */
+.footer-logo{
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+/* titels */
+.footer-col h4{
+    margin-bottom: 10px;
+}
+
+/* lijst */
+.footer-col ul{
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li{
+    margin-bottom: 8px;
+}
+
+/* links in footer */
+.footer-col a{
+    color: white;
+}
+
+.footer-col a:hover{
+    text-decoration: underline;
+}
+
+/* onderkant footer */
+.footer-bottom{
+    text-align: center;
+    margin-top: 30px;
+
+    border-top: 1px solid #333;
+    padding-top: 15px;
+
+    font-size: 14px;
+}
