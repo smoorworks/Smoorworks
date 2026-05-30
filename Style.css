@@ -109,12 +109,17 @@ a{
    MAIN CONTENT
 ========================= */
 
-main{
+.center{
     flex: 1;
 
     max-width: 1100px;
     margin: 40px auto;
     padding: 0 20px;
+}
+
+.left {
+    margin-bottom: auto;
+    margin-top: 40px;
 }
 
 /* artikel layout */
@@ -246,7 +251,7 @@ h3 {
     text-decoration: underline;
 }
 
-@media (max-width: 768px){
+@media (max-width: 500px){
 
     .socials,
     .contact-info,
@@ -263,6 +268,47 @@ h3 {
 
 }
 
+.about {
+    display: flex;
+    gap: 20px;
+}
+
+.about-half {
+    flex: 1;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.about-half h1 {
+    text-align: center;
+}
+
+.about-half p {
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+@media (max-width: 1469px) {
+    .about {
+        flex-direction: column;
+    }
+
+    .about-half p {
+        margin: 0 auto;
+        max-width: 600px;
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+}
+
+.info-box {
+    margin: 0 auto;
+    border: 5px black solid;
+    padding-bottom: 15px;
+    width: 300px;
+    text-align: center;
+}
 
 /* =========================
    FOOTER
