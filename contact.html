@@ -36,28 +36,62 @@
 
     <!-- MAIN CONTENT -->
     <main>
-       <article>
+       <article class="contactfield">
         <!---->
             <h1 class="h1">Contact</h1>
-            <h3>Have a question, bug report or collaboration idea?</h3>
 
-            <br>
+            <div class="contact-info">
+                <h3>Have a question, bug report or <br> collaboration idea?</h3>
 
-            <p class="text">Email: <br> smoorworks@gmailcom</p>
-            <p class="text">location: <br> Netherlands</p>
+                <br>
+
+                <p class="text">Email: <br> smoorworks@gmailcom</p>
+                <p class="text">location: <br> Netherlands</p>
+            </div>
 
             <br><br><br>
 
             <div class="socials">
                 <h3>Social Media</h4>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="https://smoorworks.itch.io/">Itch.io</a></li>
+                    <li><a href="https://www.instagram.com/smoorworks/?next=%2F">Instagram</a></li>
+                    <li><a href="https://www.tiktok.com/@smoorworks">Tiktok</a></li>
                     <li><a href="https://www.youtube.com/@SmoorWorks-d7d">Youtube</a></li>
                 </ul>
-            </div>        
+            </div>
+
+            <br><br><br>
+            
+            <div class="contact-items">
+                <h3>What you can contact us for</h3>
+                <ul>
+                    <li><p class="text">✔ Bug reports</p></li>
+                    <li><p class="text">✔ Game feedback</p></li>
+                    <li><p class="text">✔ Business inquiries</p></li>
+                    <li><p class="text">✔ General questions</p></li>
+                </ul>
+            </div>
+
+            <br><br><br>
+
+            <div class="message">
+                <form name="contact" method="POST" data-netlify="true">
+
+                    <label class="text">
+                        Your email: <br>
+                        <input type="email" name="email">
+                    </label>
+                    <br><br>
+                    <label class="text">
+                        Your message: <br>
+                        <textarea name="message" rows="4" cols="40" ></textarea>
+                    </label>
+                    <br><br>
+                    <!-- your other form fields go here -->
+                    <button type="submit" class="send-button">Send</button>
+                </form>
+            </div>
         <!---->
         </article> <!-- pagina inhoud -->
     </main>

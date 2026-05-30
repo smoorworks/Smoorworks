@@ -4,7 +4,7 @@
 
 body{
     margin: 0;
-    background-color: #444444;
+    background: linear-gradient(#444444, #303030);
     color: rgb(197, 197, 197);
 
     display: flex;
@@ -15,6 +15,16 @@ body{
 
     word-wrap: break-word;
     overflow-wrap: break-word;
+}
+
+body::before{
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+    opacity: 0.5;
 }
 
 /* algemene link reset */
@@ -163,14 +173,99 @@ h3 {
     }
 }
 
+.contactfield {
+    min-width: 400px;
+}
+
 .socials {
     flex: 1;
     min-width: 200px;
+    background-color: #222;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
 }
 
 .socials ul{
     list-style: none;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.socials li {
+    margin-bottom: 10px;
+    transition: 0.2s;
+}
+
+.socials li:hover {
+    text-decoration: underline;
+    color: white;
+    font-size: 110%;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 200px;
+    background-color: #222;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+.contact-items {
+    flex: 1;
+    min-width: 200px;
+    background-color: #222;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+.contact-items ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 8px;
+}
+
+textarea {
+    resize: none;
+    border-radius: 5px;
+    border-color: #303030;
+    color: rgb(0, 0, 0);
+    background-color: #979797;
+    margin-top: 10px;
+}
+
+input {
+    border-radius: 5px;
+    border-color: #303030;
+    color: rgb(0, 0, 0);
+    background-color: #979797;
+    margin-top: 10px;
+    border: 0px;
+    height: 20px;
+    width: 310px;
+}
+
+.message {
+    flex: 1;
+    min-width: 200px;
+    background-color: #222;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-radius: 10px;
+}
+
+.send-button {
+    width: 100px;
+    height: 30px;
+    border-color: rgba(0, 0, 0, 0);
+    border-radius: 3px;
+    background-color: rgb(219, 219, 219);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #000000;
 }
 
 /* =========================
@@ -178,7 +273,7 @@ h3 {
 ========================= */
 
 .footer{
-    background-color: rgb(20, 20, 20);
+    background-color: #141414;
     color: white;
 
     padding: 40px 20px;
