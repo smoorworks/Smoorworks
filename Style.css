@@ -246,6 +246,24 @@ h3 {
     text-decoration: underline;
 }
 
+@media (max-width: 768px){
+
+    .socials,
+    .contact-info,
+    .contact-items,
+    .message{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .contactfield{
+        min-width: 100%;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+}
+
+
 /* =========================
    FOOTER
 ========================= */
