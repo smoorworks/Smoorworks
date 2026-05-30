@@ -110,13 +110,56 @@ main{
 /* artikel layout */
 article{
     max-width: 800px;
-    margin-left: 30px;
+    text-align: center;
 }
 
 .h1 {
     color: rgb(250, 100, 0);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 40px;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.games{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.game-card{
+    display: flex;
+    gap: 20px;
+
+    padding: 20px;
+    border-radius: 8px;
+
+    background-color: rgb(37, 37, 37);
+}
+
+.game-info{
+    flex: 1;
+}
+
+.game-info h3{
+    margin-top: 0;
+    color: #fa6400;
+}
+
+@media (max-width: 768px){
+    .game-card{
+        flex-direction: column;
+    }
 }
 
 /* =========================
